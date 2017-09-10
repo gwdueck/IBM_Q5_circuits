@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{graphicx,tikz}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\begin{document}
+
+\title{Benchmark Circuits for IBM's Quantum Computer}
+\date{}
+\maketitle
+
+\section{Introduction}
+IBM's 5 qubit quantum computer \cite{IBMQ} supports gates from the Clifford+T gate library. 
+This repository contains some  Clifford+T circuits that have been transformed to be executed on IBM's Q5.
+
+\section{Benchmark Circuits}
+
+The following circuits are available in the folder labeled {\tt original}.
+\vspace{5mm}
+
+\begin{tabular}{|l|r|r|r|r|c|}
+   \hline
+   Name & Qubits & Gates & Depth & T-depth & Source \\ \hline  \hline
+   {\tt Full\_Adder\_c.qc} & 4 & 20 & 19 & 7 & \cite{DBLP:conf/rc/MillerSD14}  \\  \hline
+   {\tt Full\_Adder\_d.qc} & 4 & 22 & 15 & 2 & \cite{DBLP:conf/rc/MillerSD14}  \\  \hline
+   {\tt Full\_Adder\_e.qc} & 4 & 21 & 12 & 2 & \cite{DBLP:conf/rc/MillerSD14}  \\  \hline
+   {\tt Toffoli.qc} & 3 & 17 & 16 & 6 &   \\  \hline
+  \end{tabular} 
+
+
+\bibliographystyle{plain}
+\bibliography{doc_lit} 
+
+\end{document}
