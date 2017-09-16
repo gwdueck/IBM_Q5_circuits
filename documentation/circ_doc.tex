@@ -1,8 +1,11 @@
 \documentclass{article}
 \usepackage{graphicx,tikz}
+\usepackage{tabu}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{hyperref}
+
+\newcommand\bred[1]{\textcolor{red}{\textbf{#1}}}
 \begin{document}
 
 \title{Benchmark Circuits for IBM's Quantum Computer}
@@ -39,22 +42,24 @@ The following circuits are available in the folder labeled {\tt original}.
   A summary is given below.
   
   \vspace{5mm}
-  \begin{tabular}{|l|r|r|r|r|}
+  \begin{tabu}{|l|r|r|r|r|}
    \hline
    Name & Qubits & Gates & Depth & T-depth  \\ \hline  \hline
    {\tt a2x\_c\_01234.qc} & 5 & 87 &  &  \\  \hline
    {\tt a2x\_c\_02341.qc} & 5 & 59 &  &  \\  \hline
+   {\tt a2x\_e\_01234.qc} & 5 & 70 &  &  \\  \hline
+   {\tt a2x\_e\_02341.qc} & 5 & \bred{52} &  &  \\ \tabucline[2pt]{-}
    {\tt Full\_Adder\_c\_01234.qc} & 5 & 60 &  &    \\  \hline
-   {\tt Full\_Adder\_c\_01324.qc} & 5 & 28 &  &    \\  \hline
+   {\tt Full\_Adder\_c\_01324.qc} & 5 & \bred{28} &  &    \\  \hline
   {\tt Full\_Adder\_d\_01234.qc} & 5 & 74 &  &    \\  \hline
    {\tt Full\_Adder\_d\_01324.qc} & 5 & 42 &  &    \\  \hline
      {\tt Full\_Adder\_e\_01234.qc} & 5 & 55 &  &    \\  \hline
-   {\tt Full\_Adder\_e\_01324.qc} & 5 & 37 &  &    \\  \hline
-    {\tt Toffoli\_c\_01234.qc} & 5 & 17 &  &   \\  \hline
+   {\tt Full\_Adder\_e\_01324.qc} & 5 & 37 &  &    \\  \tabucline[2pt]{-}
+    {\tt Toffoli\_c\_01234.qc} & 5 & \bred{17} &  &   \\  \hline
    {\tt Toffoli\_d\_01234.qc} & 5 & 25 &  &  \\  \hline
    {\tt Toffoli\_e\_01234.qc} & 5 & 23 &  &   \\  \hline
 
-  \end{tabular} 
+  \end{tabu} 
   \vspace{5mm}
 
 
