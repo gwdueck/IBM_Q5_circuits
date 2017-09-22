@@ -55,6 +55,8 @@ The following circuits are available in the folder labeled {\tt original}.
   Different permutations, produce different results.
   Since the computer has 5 available qubits, circuits can be extended to 5 qubits at no cost.
   The names of the circuits are obtained by taken the original name and appending the permutation to it.
+  If the output permutation is different than the input permutation, it is appended to the name.
+  For example, the circuit {\tt Full\_Adder\_c\_0132\_0123.qc} takes the input in the permutation $(2 3)$, however, the output qubits are not permuted.
   A summary is given below.
   
   \vspace{5mm}
@@ -96,7 +98,8 @@ The following circuits are available in the folder labeled {\tt original}.
     \tabucline[2pt]{-}
     
    {\tt Full\_Adder\_c\_01234.qc} & 5 & 60 &  &    \\  \hline
-   {\tt Full\_Adder\_c\_01324.qc} & 5 & \bred{28} &  &    \\  \hline
+   {\tt Full\_Adder\_c\_01324.qc} & 5 & 28 &  &    \\  \hline
+    {\tt Full\_Adder\_c\_0132\_0123.qc} & 4 & \bred{24} &  &    \\  \hline
    {\tt Full\_Adder\_d\_01234.qc} & 5 & 74 &  &    \\  \hline
    {\tt Full\_Adder\_d\_01324.qc} & 5 & 42 &  &    \\  \hline
    {\tt Full\_Adder\_e\_01234.qc} & 5 & 55 &  &    \\  \hline
