@@ -16,7 +16,7 @@ t2 v0 v1
 T* v2
 t2 v0 v2
 T v1
-S v0
+S* v0
 t2 v1 v2
 t2 v0 v1
 H v2
