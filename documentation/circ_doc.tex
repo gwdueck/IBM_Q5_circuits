@@ -14,7 +14,7 @@
 
 \section{Introduction}
 IBM's 5 qubit quantum computer \cite{IBMQ} supports gates from the Clifford+T gate library. 
-This repository contains some  Clifford+T circuits that have been transformed to be executed on IBM's Q5.
+This repository contains some  Clifford+T circuits that have been transformed to be executed on IBM's {\tt qx2} and {\tt qx4}.
 
 \section{Benchmark Circuits}
 
@@ -51,7 +51,7 @@ The following circuits are available in the folder labeled {\tt original}.
   \end{tabular} 
   \vspace{5mm}
   
-  The transformed circuits---to fit the Q5 architecture---are found in the folder labeled {\tt IBM}.
+  The transformed circuits---to fit the Q5 architecture---are found in the folder labeled {\tt qx2} and {\tt qx4} respectively.
   Different permutations, produce different results.
   Since the computer has 5 available qubits, circuits can be extended to 5 qubits at no cost.
   The names of the circuits are obtained by taken the original name and appending the permutation to it.
@@ -62,7 +62,7 @@ The following circuits are available in the folder labeled {\tt original}.
   \vspace{5mm}
   \begin{tabu}{|l|r|r|r|r|}
    \hline
-   Name & Qubits & Gates & Depth & T-depth  \\ \hline  \hline
+   Name & Qubits & Gates & Depth &   \\ \hline  \hline
   {\tt 01\_01234.qc} & 5 & 149 &  &   \\  \hline
   {\tt 01\_01342.qc} & 5 & \bred{77} &  &   \\  \hline
   \tabucline[2pt]{-}
