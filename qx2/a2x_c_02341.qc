@@ -1,5 +1,5 @@
 .v v0 v1 v2 v3 v4
-.i v0 v1 v2 v3
+.i v0 v1 v2 v3 v4
 BEGIN
 H v3
 H v4
