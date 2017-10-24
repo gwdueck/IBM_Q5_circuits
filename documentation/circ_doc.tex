@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{graphicx,tikz}
+\usepackage{longtable}
 \usepackage{tabu}
 \usepackage{caption}
 \usepackage{subcaption}
@@ -51,7 +52,7 @@ The following circuits are available in the folder labeled {\tt original}.
   \end{tabular} 
   \vspace{5mm}
   
-  The transformed circuits---to fit the Q5 architecture---are found in the folder labeled {\tt qx2} and {\tt qx4} respectively.
+  The transformed circuits---to fit the Q5 architecture---are found in the folders labeled {\tt qx2} and {\tt qx4} respectively.
   Different permutations, produce different results.
   Since the computer has 5 available qubits, circuits can be extended to 5 qubits at no cost.
   The names of the circuits are obtained by taken the original name and appending the permutation to it.
@@ -60,7 +61,7 @@ The following circuits are available in the folder labeled {\tt original}.
   A summary is given below.
   
   \vspace{5mm}
-  \begin{tabu}{|l|r|r|r|r|r|}
+  \begin{longtabu}{|l|r|r|r|r|r|}
    \hline
    Name & lines & G - x2 & Dep &  G - x4 & Dep \\ \hline  \hline
   {\tt 01\_01234.qc} & 5 & 149 &  89 & 157 &  92\\  \hline
@@ -69,7 +70,7 @@ The following circuits are available in the folder labeled {\tt original}.
   \tabucline[2pt]{-}
   
   {\tt 1\_01234.qc} & 5 & 28 & 15  &  24 & 13  \\  \hline
-  {\tt 1\_02134.qc} & 5 & \bred{24} &  12 & &  \\  \hline
+  {\tt 1\_02134.qc} & 5 & \bred{24} &  \bred{12} & &  \\  \hline
   {\tt 1\_01234.qc} & 5 & &  & \bred{24}  & 13  \\  \hline
   \tabucline[2pt]{-}
   
@@ -95,8 +96,8 @@ The following circuits are available in the folder labeled {\tt original}.
    {\tt a2x\_c\_01234.qc} & 5 & 85 & 58 & 75 & 45 \\  \hline
    {\tt a2x\_c\_02341.qc} & 5 & 59 & 41 & 59 &  38 \\  \hline
    {\tt a2x\_e\_01234.qc} & 5 & 70 & 44  & 60 & 36  \\  \hline
-   {\tt a2x\_e\_02341.qc} & 5 & \bred{52} &  \bred{30} & &  \\  \hline
-    {\tt a2x\_e\_31204.qc} & 5 & &   & 39 & 23 \\ 
+   {\tt a2x\_e\_02341.qc} & 5 & 52 &  30 & &  \\  \hline
+    {\tt a2x\_e\_31204.qc} & 5 & &   & \bred{39} & \bred{23} \\ 
    \tabucline[2pt]{-}
    
    {\tt a3x\_c\_01234.qc} & 5 & 176 & 127 & 144 & 103 \\  \hline
@@ -109,7 +110,7 @@ The following circuits are available in the folder labeled {\tt original}.
    {\tt Full\_Adder\_c\_01234.qc} & 5 & 60 &  48 &  60 & 40  \\  \hline
    {\tt Full\_Adder\_c\_01324.qc} & 5 & 28 &  22 &    & \\  \hline
     {\tt Full\_Adder\_c\_32104.qc} & 5 & & &    30  &  25  \\  \hline
-    {\tt Full\_Adder\_c\_0132\_0123.qc} & 4 & \bred{24} & & &    \\  \hline
+    {\tt Full\_Adder\_c\_0132\_0123.qc} & 4 & \bred{24} & \bred{17} & &    \\  \hline
    {\tt Full\_Adder\_d\_01234.qc} & 5 & 74 & 50 & 64 &  38  \\  \hline
    {\tt Full\_Adder\_d\_01324.qc} & 5 & 42 & 25  & &    \\  \hline
    {\tt Full\_Adder\_d\_10324.qc} & 5 &  &  & 32 &  19  \\  \hline
@@ -118,14 +119,14 @@ The following circuits are available in the folder labeled {\tt original}.
     {\tt Full\_Adder\_d\_10324.qc} & 5 &  &  & 31 &  17  \\  
     \tabucline[2pt]{-}
    
-   {\tt Toffoli\_c\_01234.qc} & 5 & \bred{17} & 14 & 31 & 23  \\  \hline
-   {\tt Toffoli\_c\_21034.qc} & 5 &  &  & \bred{17} & 14 \\  \hline
+   {\tt Toffoli\_c\_01234.qc} & 5 & \bred{17} & \bred{14} & 31 & 23  \\  \hline
+   {\tt Toffoli\_c\_21034.qc} & 5 &  &  & \bred{17} & \bred{14} \\  \hline
    {\tt Toffoli\_d\_01234.qc} & 5 & 25 & 16 & 33 & 19 \\  \hline
    {\tt Toffoli\_d\_02134.qc} & 5 &  &  & 25 & 15 \\  \hline
    {\tt Toffoli\_e\_01234.qc} & 5 & 27 & 14 & 29 &  15 \\  \hline
    {\tt Toffoli\_e\_12034.qc} & 5 & 23 & 14 & & \\  \hline
    {\tt Toffoli\_e\_10234.qc} & 5 &  &  & 23 &  14 \\  \hline
-\end{tabu} 
+\end{longtabu} 
  
   
   \vspace{5mm}
